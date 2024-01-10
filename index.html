@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Orbitron&family=Montserrat">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="./favicon.ico"  type="image/x-icon">
+
+    <script src="index.js" async> </script>
+    <title>Calculator</title>
+</head>
+<body>
+    <audio id="key-sound"></audio>
+    <div id="calculator-body">
+        <div id="digit-display" class="body-panel">0</div>
+        <div id="logo-panel" class="body-panel">
+            <img id='odin-icon' src="./odin-icon.svg" alt="odin icon">
+            <div>Odinmath II</div>
+        </div>
+        <div id="square-buttons" class="body-panel">
+            <button id="clear-button">C</button>
+            <button id="delete-button">DEL</button>
+            <button>%</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>x</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button id="zero">0</button>
+            <button id="decimal">.</button>
+            <button id="equals-button">=</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- num1 is taken once an operator is pressed. take from display
+num2 is taken once = is pressed
+
+differentiating between num1 and num2 displays we use <newEntryFlag>-->

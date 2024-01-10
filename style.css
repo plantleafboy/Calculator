@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#calculator-body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #c1ad7a;
+    width: 400px;
+    height: 600px;
+
+    min-width: 375px;
+
+    flex: 0 1 auto;
+}
+
+.body-panel {
+    width: 95%;
+    height: 200px;
+    text-align: center;
+}
+
+#square-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(25, 23, 23);
+    height: 420px;
+    padding: 10px;
+    column-gap: 14px;
+    row-gap: 6px;
+     
+    /* MAKE BUTTONS FLEXIBLE
+     min-width: 0;
+    min-height: 0;
+    overflow: hidden; */
+
+    flex: 0 1 auto;
+}
+
+.num-key {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    border: none;
+    width: 20%;
+    height: 70px;
+    /* border: 2px solid black; */
+    font-size: 28px;
+    font-weight: normal;
+    background-color: #f2f9f2;
+    flex: 0 1 auto;
+    border-radius: 2px;
+
+    cursor: pointer;
+    box-shadow: 0 2px 5px #999;
+    -webkit-transition: all 0.3s;
+    transition: all 0.2s;
+}
+
+.num-key:active {
+    box-shadow: 0px 4px 8px #e3f5e3;
+    -webkit-transform: 
+        scale(0.98);
+    transform: scale(0.98);
+}
+
+.num-key:hover {background-color: #dbf1db}
+
+#digit-display {
+    flex: 0 1 auto;
+    height: 70px;
+
+    font-family: 'Orbitron';
+    font-size: 2rem;
+    color: #bf2f2f;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #000000cc;
+    letter-spacing: 4px;
+
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#logo-panel {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    background-color: #5c645e;
+    flex: 0 1 auto;
+    height: 40px;
+    font-family: 'Montserrat';
+    line-height: 32px;
+    color: bisque;
+    padding: 4px;
+}
+
+#zero {
+    width: 114px;
+}
+
+#decimal {
+    width: 72px;
+}
+
+#equals-button {
+    width: 114px;
+    background-color: orangered;
+}
+
+.toggleOperator {
+    padding: 10px;
+    cursor: pointer;
+    background-color: yellow;
+    color: white;
+    border: none;
+  }
